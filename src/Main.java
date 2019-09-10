@@ -38,8 +38,13 @@ public class Main {
             System.out.println("Opened Socket: " + PORT); // log
             while(portOpen){ // while the port is open, which is gonna be always, while server is runnin
                 // now the ServerSocket, must accept a request, therefore creating a Socket
-                socketB = ss.accept();
-                System.out.println("you made it!");
+                try {
+                    socketB = ss.accept();
+                    System.out.println("Socket Accepted!");
+                } catch (IOException e){
+                    System.out.println("ERROR: Socket did not get accepted!");
+                }
+
             }
 
         } catch (IOException e){
