@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="javax.servlet-api-3.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/javax.servlet-api-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/jetty-client-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/jetty-http-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/jetty-io-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/jetty-security-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/jetty-server-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/jetty-servlet-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/jetty-util-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/jetty-webapp-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/jetty-xml-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/slf4j-simple-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/spark-core-2.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/websocket-api-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/websocket-client-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/websocket-common-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/websocket-server-9.4.12.v20180830.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../SDKs/Spark Jars/websocket-servlet-9.4.12.v20180830.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
