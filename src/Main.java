@@ -1,4 +1,7 @@
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -7,7 +10,7 @@ import static spark.Spark.*;
 /*
 *  Responsibility: To build the a server
 *
-*  Materials:
+*  "Materials":
 *   1) ServerSocket
 *   2) a Socket
 *
@@ -44,6 +47,12 @@ public class Main {
                 } catch (IOException e){
                     System.out.println("ERROR: Socket did not get accepted!");
                 }
+
+                InputStream dataStream = socketB.getInputStream(); // bringing all the associated data from socketB in a stream, (reading the data)
+                BufferedReader in = new BufferedReader(new InputStreamReader(dataStream)); // translating the passed data
+
+
+
 
             }
 
