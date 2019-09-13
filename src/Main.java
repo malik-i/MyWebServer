@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -50,10 +47,45 @@ public class Main {
 
                 InputStream dataStream = socketB.getInputStream(); // bringing all the associated data from socketB in a stream, (reading the data)
                 BufferedReader in = new BufferedReader(new InputStreamReader(dataStream)); // translating the passed data
+                try {
+                    String line = in.readLine();
+                    System.out.println("===REQUEST STARTS HERE==="); // Reqauts begin right here
+                    // This is where the request begins
+                    System.out.println(line);
 
+                    //HEADERS
+                    line = in.readLine();
+                    boolean readSwitch = true;
 
+                    while (readSwitch) {
+                        System.out.println(line);
+                        line = in.readLine();
 
+                        readSwitch = line.length() == 0 ? false : true;
+                    }
+//                    line = in.readLine();
+                    System.out.println("===REQUEST STOPS HERE===");
+                    System.out.println();
+                    System.out.println();
 
+                } catch(IOException e){
+                    System.out.println("ERROR: Can not read");
+                }
+
+                BufferedOutputStream out = new BufferedOutputStream(socketB.getOutputStream());
+                PrintWriter writer = new PrintWriter(out, true);
+
+                // Status Update in console
+                writer.println("HTTP/1.1 200 OK");
+                writer.println("Server: TEST");
+                writer.println("Connection: close");
+                writer.println("Content-type: text/html");
+                writer.println("");
+
+                // body
+                writer.println("<h1>Hello Livia!</h1>");
+
+                socketB.close();
             }
 
         } catch (IOException e){
